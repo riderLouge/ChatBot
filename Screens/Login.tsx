@@ -11,13 +11,12 @@ var {width,height} = Dimensions.get('window')
 const Login = () => {
 
     const Navigation = useNavigation()
-    const language = ["English", "Tamil", "Malayalam"]
+    const language = ["English","Malayalam","Tamil","Hindi"]
     const [selectedLanguage,setSelectedLanguage] = React.useState('');
     const [name,setName] = React.useState('');
 
     return(
         <View style={{flex:1, backgroundColor:'black'}}>
-
             <View style={{alignItems:'center'}}>
                 <Text style={{fontStyle:'italic', fontSize:25, marginTop:50}}>FINAL PROJECT</Text>
                 <TextInput 

@@ -6,13 +6,15 @@ import {
     useColorScheme,
     View,
   } from 'react-native';
+import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
+
 
 
   const English = ({route}) => {
 
     const lang = route.params.language;
     const name = route.params.Name;
-        const Text1 = "Hello"+{name}+". Thank you for being our valuable customer";
+        const Text1 = "Hello "+name+". Thank you for being our valuable customer";
         const Text2 = "I am here to assist you with your problem and connect with our customer service if needed. Please select your problem from the below given list";
         const Text3 = "Select your problem";
         const Text4 = "Others";
@@ -160,83 +162,93 @@ import {
 
 
     return(
+        
         <View style={{flex:1, backgroundColor:'black'}}>
             <ScrollView>
-                <View style={{backgroundColor:'silver',
-                              width:'80%',
-                              marginLeft:10,
-                              marginTop:50,
-                              borderRadius:5}}>
-                    <Text style={{fontSize:15,
-                                  color:'black',
-                                  margin:15}}>{Text1}</Text>
+                <View style={{flexDirection:'row'}}>
+                    <Icon name='robot-excited' style={{marginTop:50}} size={30}></Icon>
+                    <View style={{backgroundColor:'silver',
+                                width:'70%',
+                                marginLeft:10,
+                                marginTop:50,
+                                borderRadius:5}}>
+                        <Text style={{fontSize:15,
+                                    color:'black',
+                                    margin:15}}>{Text1}</Text>
+                    </View>
                 </View>
-                <View style={{backgroundColor:'silver',
-                              width:'80%',
-                              marginLeft:10,
-                              marginTop:20,
-                              borderRadius:5}}>
-                    <Text style={{fontSize:15,
-                                  color:'black',
-                                  margin:15}}>{Text2}</Text>
+                <View style={{flexDirection:'row'}}>
+                    <Icon name='robot-excited' style={{marginTop:20}} size={30}></Icon>
+                    <View style={{backgroundColor:'silver',
+                                width:'80%',
+                                marginLeft:10,
+                                marginTop:20,
+                                borderRadius:5}}>
+                        <Text style={{fontSize:15,
+                                    color:'black',
+                                    margin:15}}>{Text2}</Text>
+                    </View>
                 </View>
-                <View style={{backgroundColor:'silver',
-                              width:'80%',
-                              marginLeft:10,
-                              marginTop:20,
-                              borderRadius:5}}>
-                    <Text style={{fontSize:15,
-                                  color:'black',
-                                  margin:15}}>{Text3}</Text>
-                    <View style={{backgroundColor:'#1f1e1e',
-                                  width:'90%',
-                                  marginLeft:10,
-                                  borderRadius:5}}>
+                <View style={{flexDirection:'row'}}>
+                    <Icon name='robot-excited' style={{marginTop:20}} size={30}></Icon>
+                    <View style={{backgroundColor:'silver',
+                                width:'80%',
+                                marginLeft:10,
+                                marginTop:20,
+                                borderRadius:5}}>
                         <Text style={{fontSize:15,
-                                  color:'white',
-                                  margin:15}}
-                              onPress={()=> setSelected('ARQ')}>{AccountRelatedQuery}</Text>
-                    </View>
-                    <View style={{backgroundColor:'#1f1e1e',
-                                  width:'90%',
-                                  marginLeft:10,
-                                  borderRadius:5,
-                                  marginTop:10}}>
-                        <Text style={{fontSize:15,
-                                  color:'white',
-                                  margin:15}}
-                              onPress={()=> setSelected('TQ')}>{TransactionQuery}</Text>
-                    </View>
-                    <View style={{backgroundColor:'#1f1e1e',
-                                  width:'90%',
-                                  marginLeft:10,
-                                  borderRadius:5,
-                                  marginTop:10}}>
-                        <Text style={{fontSize:15,
-                                  color:'white',
-                                  margin:15}}
-                              onPress={()=> setSelected('CNACA')}>{CreateNewAccountCloseAccount}</Text>
-                    </View>
-                    <View style={{backgroundColor:'#1f1e1e',
-                                  width:'90%',
-                                  marginLeft:10,
-                                  borderRadius:5,
-                                  marginTop:10}}>
-                        <Text style={{fontSize:15,
-                                  color:'white',
-                                  margin:15}}
-                              onPress={()=> setSelected('CAT')}>{ChangeAccountType}</Text>
-                    </View>
-                    <View style={{backgroundColor:'#1f1e1e',
-                                  width:'90%',
-                                  marginLeft:10,
-                                  borderRadius:5,
-                                  marginTop:10,
-                                  marginBottom:20}}>
-                        <Text style={{fontSize:15,
-                                  color:'white',
-                                  margin:15}}
-                              onPress={()=> setSelected('O')}>{Text4}</Text>
+                                    color:'black',
+                                    margin:15}}>{Text3}</Text>
+                        <View style={{backgroundColor:'#1f1e1e',
+                                    width:'90%',
+                                    marginLeft:10,
+                                    borderRadius:5}}>
+                            <Text style={{fontSize:15,
+                                    color:'white',
+                                    margin:15}}
+                                onPress={()=> setSelected('ARQ')}>{AccountRelatedQuery}</Text>
+                        </View>
+                        <View style={{backgroundColor:'#1f1e1e',
+                                    width:'90%',
+                                    marginLeft:10,
+                                    borderRadius:5,
+                                    marginTop:10}}>
+                            <Text style={{fontSize:15,
+                                    color:'white',
+                                    margin:15}}
+                                onPress={()=> setSelected('TQ')}>{TransactionQuery}</Text>
+                        </View>
+                        <View style={{backgroundColor:'#1f1e1e',
+                                    width:'90%',
+                                    marginLeft:10,
+                                    borderRadius:5,
+                                    marginTop:10}}>
+                            <Text style={{fontSize:15,
+                                    color:'white',
+                                    margin:15}}
+                                onPress={()=> setSelected('CNACA')}>{CreateNewAccountCloseAccount}</Text>
+                        </View>
+                        <View style={{backgroundColor:'#1f1e1e',
+                                    width:'90%',
+                                    marginLeft:10,
+                                    borderRadius:5,
+                                    marginTop:10}}>
+                            <Text style={{fontSize:15,
+                                    color:'white',
+                                    margin:15}}
+                                onPress={()=> setSelected('CAT')}>{ChangeAccountType}</Text>
+                        </View>
+                        <View style={{backgroundColor:'#1f1e1e',
+                                    width:'90%',
+                                    marginLeft:10,
+                                    borderRadius:5,
+                                    marginTop:10,
+                                    marginBottom:20}}>
+                            <Text style={{fontSize:15,
+                                    color:'white',
+                                    margin:15}}
+                                onPress={()=> setSelected('O')}>{Text4}</Text>
+                        </View>
                     </View>
                 </View>
                 <View >
