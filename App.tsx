@@ -14,7 +14,8 @@ import English from './Screens/English';
 import Tamil from './Screens/Tamil';
 import Hindi from './Screens/Hindi';
 import Malayalam from './Screens/Malayalam';
-
+import Telugu from './Screens/Telugu';
+import Kannada from './Screens/Kannada';
 import {
   StyleSheet,
   Text,
@@ -41,6 +42,9 @@ const App = () => {
         <Stack.Screen name="Tamil" component={Tamil}/>
         <Stack.Screen name="Hindi" component={Hindi}/>
         <Stack.Screen name="Malayalam" component={Malayalam}/>
+        <Stack.Screen name="Telugu" component={Telugu}/>
+        <Stack.Screen name="Kannada" component={Kannada}/>
+
 
       </Stack.Navigator>
   );

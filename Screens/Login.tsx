@@ -11,7 +11,7 @@ var {width,height} = Dimensions.get('window')
 const Login = () => {
 
     const Navigation = useNavigation()
-    const language = ["English","Malayalam","Tamil","Hindi"]
+    const language = ["English","Malayalam","Tamil","Hindi","Telugu","Kannada"]
     const [selectedLanguage,setSelectedLanguage] = React.useState('');
     const [name,setName] = React.useState('');
 
