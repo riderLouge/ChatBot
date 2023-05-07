@@ -5,6 +5,7 @@ import {
     Text,
     useColorScheme,
     View,
+    Image
   } from 'react-native';
 import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -162,10 +163,13 @@ import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
 
     return(
         
+       
+        
         <View style={{flex:1, backgroundColor:'black'}}>
             <ScrollView>
                 <View style={{flexDirection:'row'}}>
-                    <Icon name='robot-excited' style={{marginTop:50}} size={30}></Icon>
+                    {/* <Icon name='robot-excited' style={{marginTop:50}} size={30}></Icon> */}
+                    <Image source={require('../asset/bot.png')} style={{width:40,height:40,marginTop:50}}></Image>
                     <View style={{backgroundColor:'silver',
                                 width:'70%',
                                 marginLeft:10,
@@ -177,7 +181,8 @@ import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
                     </View>
                 </View>
                 <View style={{flexDirection:'row'}}>
-                    <Icon name='robot-excited' style={{marginTop:20}} size={30}></Icon>
+                    {/* <Icon name='robot-excited' style={{marginTop:20}} size={30}></Icon> */}
+                    <Image source={require('../asset/bot.png')} style={{width:40,height:40,marginTop:50}}></Image>
                     <View style={{backgroundColor:'silver',
                                 width:'80%',
                                 marginLeft:10,
@@ -189,7 +194,8 @@ import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
                     </View>
                 </View>
                 <View style={{flexDirection:'row'}}>
-                    <Icon name='robot-excited' style={{marginTop:20}} size={30}></Icon>
+                    {/* <Icon name='robot-excited' style={{marginTop:20}} size={30}></Icon> */}
+                    <Image source={require('../asset/bot.png')} style={{width:40,height:40,marginTop:50}}></Image>
                     <View style={{backgroundColor:'silver',
                                 width:'80%',
                                 marginLeft:10,
@@ -255,6 +261,7 @@ import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
                 </View>
             </ScrollView>
         </View>
+
     )
 
 }
